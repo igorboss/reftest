@@ -1,0 +1,18 @@
+== Suppressed Messages ==
+
+# Add warning and/or information messages here after you've confirmed that they aren't really a problem
+# (And include comments like this justifying why)
+
+# This is inherited from the base resource
+WARNING: StructureDefinition/myObservation: StructureDefinition.snapshot.element[15].mapping[3].map: value should not start or finish with whitespace
+
+# We're expecting these to not match the slice - we're showing how you can use slicing to define the one repetition you want even when many repetitions might be present
+INFORMATION: Patient/example: Patient.name[0]: This element does not match any known slice defined in the profile http://somewhere.org/fhir/uv/myig/StructureDefinition/mypatient
+INFORMATION: Patient/example: Patient.name[1]: This element does not match any known slice defined in the profile http://somewhere.org/fhir/uv/myig/StructureDefinition/mypatient
+
+# If this was a real IG, there should be examples for these profiles too.  But it's not, and I'm lazy...
+WARNING: http://somewhere.org/fhir/uv/myig/StructureDefinition/myObservation: The Implementation Guide contains no examples for this profile
+WARNING: http://somewhere.org/fhir/uv/myig/StructureDefinition/mypractitioner: The Implementation Guide contains no examples for this profile
+
+WARNING: Patient/pat2: Patient.identifier[0].system: The System URI could not be determined for the code 
+#'https://fhir.ee/sid/pid/usa/ppn' in the ValueSet 'https://fhir.ee/ValueSet/patient-identifier-domain|1.0.0': include #0 has system https://fhir.ee/CodeSystem/identifier-domain which could not be found, and the server returned error [Error from http://tx.fhir.org/r4: The code system definition for https://fhir.ee/CodeSystem/identifier-domain is a fragment, so this expansion is not permitted unless the expansion parameter "incomplete-ok" has a value of "true"]
