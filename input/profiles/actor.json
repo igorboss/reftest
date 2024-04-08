@@ -11,7 +11,11 @@
   "extension": [
     {
       "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.url",
-      "valueUri": "http://somewhere.else.org/pas/server"
+      "valueUri": "http://somewhere.else.org/mpi/server"
+    },
+    { 
+      "url" : "https://tis.tehik.ee/StructureDefinition/MPI",
+      "valueUrl" : "http://somewhere.else.org/mpi/server"
     }
   ]
 }

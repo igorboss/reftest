@@ -8,7 +8,7 @@
 
 
 id: reftest
-canonical: https://fhir.ee
+canonical: https://tis.tehik.ee
 url: https://tis.tehik.ee/ImplementationGuide/reftest
 name: RefTest
 title: "Reference test"
