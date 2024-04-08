@@ -24,7 +24,7 @@ Usage: #example
 * category = OBSCAT#social-history "Social history"
 * subject
   * type = #Patient
-  * reference = "https://fhir.ee/id/tis/mpi/Patient/7456"
+  * reference = "http://somewhere.else.org/pas/server/7456"
 * effectivePeriod.start = "2021-11-23"
 * performer
   * type = #Organization
