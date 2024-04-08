@@ -1,3 +1,4 @@
-Extension: MPI
+Extension: ActorURL
+Id: actor-url
 Description: "URL of Master Patient Index system."
-* value[x] only url
+* value[x] only canonical

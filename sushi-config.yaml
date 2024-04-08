@@ -59,10 +59,10 @@ jurisdiction: urn:iso:std:iso:3166#EE "Estonia"
 # package id and the value is the version (or dev/current). For advanced
 # use cases, the value can be an object with keys for `uri` and `version`.
 dependencies:
-  hl7.fhir.uv.extensions: current
+#  hl7.fhir.uv.extensions: current
 #  hl7.fhir.ee.base: dev   # local build
   hl7.fhir.ee.base: current  # latest EEBase buid at https://build.fhir.org/ig/HL7EE/ig-ee-base
-
+  hl7.fhir.uv.tools: current
 
 # The global property corresponds to the IG.global property, but it
 # uses the type as the YAML key and the profile as its value. Since
@@ -95,6 +95,22 @@ dependencies:
 #    description: An example Patient
 #    exampleBoolean: true
 #  Patient/bad-example: omit
+
+resources:
+  Patient/example:
+    name: example
+    description: Demo patient
+    exampleCanonical: https://fhir.ee/StructureDefinition/ee-patient
+    extension:
+    - url: http://hl7.org/fhir/tools/StructureDefinition/ig-example-actor
+      valueCanonical: https://tis.tehik.ee/ActorDefinition/mpi-server      
+  # Observation/observation1:
+  #   name: observation1
+  #   description: Observation with absolute URL
+  #   exampleCanonical: https://fhir.ee/StructureDefinition/ee-observation
+  #   extension:
+  #   - url: http://hl7.org/fhir/tools/StructureDefinition/ig-example-actor
+  #     valueCanonical: https://tis.tehik.ee/ActorDefinition/mpi-server      
 
 # Groups can control certain aspects of the IG generation.  The IG
 # documentation recommends that authors use the default groups that
